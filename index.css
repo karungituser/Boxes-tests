@@ -1,0 +1,76 @@
+/* Write your code here. */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+.bg-container {
+  height: 100vh;
+}
+
+.heading {
+  font-family: "Roboto";
+  font-size: 25px;
+  color: #0f172a;
+  text-align: center;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .heading {
+    font-size: 35px;
+  }
+}
+.boxes {
+  font-family: "Bree Serif";
+  font-size: 14px;
+  color: #ffffff;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.small-box {
+  width: 80px;
+  height: 80px;
+  background-color: #fbbf24;
+  margin-bottom: 15px;
+}
+
+.medium-box {
+  width: 120px;
+  height: 120px;
+  background-color: #38bdf8;
+  margin-bottom: 15px;
+}
+.large-box {
+  width: 200px;
+  height: 200px;
+  background-color: #ec4899;
+  margin-bottom: 15px;
+}
+.box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .small-box {
+    width: 120px;
+    height: 120px;
+  }
+  .medium-box {
+    width: 180px;
+    height: 180px;
+  }
+  .large-box {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .box-container {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+}
